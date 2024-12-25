@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merry Christmas, Peter!</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="card">
-    <!-- Snowflakes -->
-    <div id="snow-container"></div>
+    <div class="card">
+        <!-- Snowflake Container -->
+        <div id="snow-container"></div>
 
-    <!-- Greeting Message -->
-    <div class="message">
-      <svg viewBox="0 0 800 200" class="cursive-text">
-        <defs>
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#ffffff" />
-            <stop offset="50%" stop-color="#f8e6b2" />
-            <stop offset="100%" stop-color="#ffffff" />
-          </linearGradient>
-        </defs>
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" stroke="url(#gradient)">
-          Merry Christmas Peter :)
-        </text>
-      </svg>
+        <!-- SVG Greeting -->
+        <svg class="cursive-text" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="50%" dy=".35em" fill="none" stroke="url(#gradient)">
+                Merry Christmas Peter :)
+            </text>
+        </svg>
 
-      <!-- Subheading -->
-      <p class="subheading">From the Song family</p>
+ <!-- Paragraph -->
+ <div class="paragraph">
+    Wishing you and your family a season of warmth, peace, and togetherness, surrounded by those who make your heart happiest!
+</div>
+        <!-- Subheading -->
+        <div class="subheading">From the Song Family</div>
+
+    
     </div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -10,9 +10,10 @@ body {
     background: radial-gradient(circle, #990000, #660000);
     overflow: hidden;
     color: white;
-  }
-  
-  .card {
+}
+
+/* Card Container */
+.card {
     text-align: center;
     position: relative;
     width: 100%;
@@ -21,10 +22,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
-  /* Snowflakes */
-  #snow-container {
+    padding: 10px;
+}
+
+/* Snowflakes */
+#snow-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,98 +34,77 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: 1;
-  }
-  
-  .snowflake {
+}
+
+.snowflake {
     position: absolute;
     top: -10px;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     color: white;
     animation: fall linear infinite;
-  }
-  
-  @keyframes fall {
+}
+
+@keyframes fall {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     100% {
-      transform: translateY(100vh);
+        transform: translateY(100vh);
     }
-  }
-  
-  /* Cursive Text */
-  .cursive-text {
+}
+
+/* Cursive Text */
+.cursive-text {
     width: 100%;
-    height: auto;
-    max-width: 90%;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 0 auto;
     z-index: 2;
-  }
-  
-  .cursive-text text {
+}
+
+.cursive-text text {
     fill: none;
     stroke-width: 2;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 5s linear infinite, gradient-shift 5s infinite alternate;
     font-size: 4.5rem;
-  }
-  
-  @keyframes draw {
+    text-anchor: middle;
+}
+
+@keyframes draw {
     0% {
-      stroke-dashoffset: 1000;
+        stroke-dashoffset: 1000;
     }
     50% {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
     100% {
-      stroke-dashoffset: 1000;
+        stroke-dashoffset: 1000;
     }
-  }
-  
-  @keyframes gradient-shift {
+}
+
+@keyframes gradient-shift {
     0% {
-      stroke: url(#gradient);
+        stroke: url(#gradient);
     }
     100% {
-      stroke: url(#gradient);
+        stroke: url(#gradient);
     }
-  }
-  
-  /* Decorations */
-  .decorations {
-    position: absolute;
-    bottom: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-  }
-  
-  .tree {
-    width: 120px;
-    animation: bounce 2s infinite ease-in-out;
-  }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
+}
 
 /* Subheading */
 .subheading {
+    font-size: 1.0rem;
+    font-family:'Pacifico', cursive;
+    background: linear-gradient(to right, #FFD700, #ffffff,#ffc847, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.paragraph {
     font-family: 'Pacifico', cursive;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     color: white;
     text-align: center;
     margin-top: 10px;
-    text-shadow: 1px 1px 2px #000000;
-    z-index: 2;
-  }
-  
-  
+}
