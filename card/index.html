@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas, Peter!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <!-- Snowflakes -->
+    <div id="snow-container"></div>
+
+    <!-- Greeting Message -->
+    <div class="message">
+      <svg viewBox="0 0 800 200" class="cursive-text">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffffff" />
+            <stop offset="50%" stop-color="#f8e6b2" />
+            <stop offset="100%" stop-color="#ffffff" />
+          </linearGradient>
+        </defs>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" stroke="url(#gradient)">
+          Merry Christmas Peter :)
+        </text>
+      </svg>
+
+      <!-- Subheading -->
+      <p class="subheading">From the Song family</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
